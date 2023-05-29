@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Challenge One - Oracle - Alura</title>
+    <link rel="stylesheet" href="./css/reset.css" type="text/css"> 
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <div class="contenedor">
+        <header class="encabezado">
+            <img src="./img/Logo.svg" alt="logo alura" class="encabezado-logo">
+            <h1 class="encabezado-titulo">Encriptador De Palabras</h1>
+        </header>
+
+        <!-- Seccion de texto de ingreso -->
+
+        <section class="contenedor1">
+            <textarea class="contenedor1-textoIngreso" name="texto" id="textarea" cols="30"
+                rows="10" placeholder="Escriba su texto" autofocus></textarea>
+            <div class="informacion">
+                <img src="./img/Vector.svg" alt="signo de exclamacion" class="informacion-imagen">
+                <p class="informacion-parrafo">solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="cont__btn">
+                <button class="btn btn-encriptar" id="encriptar">Encriptar</button>
+                <button class="btn btn-desencriptar" id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <!-- seccion resultado -->
+
+        <section class="contenedor-resultado">
+            <textarea style="display:none;" class="contenedor-resultado-texto" name="texto" id="resultado" cols="30"
+                rows="10" placeholder="Escribe aquí tu texto"></textarea>
+            <div id="ocultar">
+                <img src="./img/silueta_busqueda.webp" alt="Silueta con lupa" class="ocultar-muneco">
+                <h2 class="ocultar-titulo">No se encontro el texto</h2>
+                <p class="ocultar-parrafo">Ingrese el texto a cifrar o descifrar</p>
+            </div>
+            <div class="cont-btn-copiar">
+                <button class="btn btn-copiar" id="copiar" hidden>copiar</button>
+            </div>
+        </section>
+
+
+        <!-- Pie de pagina con redes sociales -->
+
+        <footer class="contenedor-footer">
+            <p> Oracle One & Alura - Challenge One 2023
+                <span> - Por Daniel Garcia - ESA </span></p>
+        </footer>
+    </div>
+</body>
+
+
+
+<!-- encriptador -->
+<script type="text/javascript" src="./js/script.js"></script>
+
+</html>
